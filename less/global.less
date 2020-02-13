@@ -93,52 +93,43 @@ line-height:2;
 */
 
 footer {
-display: flex;  
-width: 100%;
-background: #F87B99;
-border-top: 1px dashed white;
-justify-content: space-evenly;
-}
-
-footer nav{
-  display:flex;
+  display: flex;  
+  width: 100%;
+  background: #F87B99;
+  border-top: 1px dashed white;
   justify-content: space-evenly;
-  
+  .footer-content { 
+    margin: 0 auto; 
+    width: 600px;
+    h3 {
+      padding: 0;
+      margin: 20px 0;
+      }    
+  }
+  nav{
+    display:flex;
+    justify-content: space-evenly;  
+    a { 
+      border: solid 1px #fefbd8; 
+      padding: 5px;
+      margin-left: 5px;
+      margin-right: 5px;
+      border-radius: 5px;
+      text-decoration: none;
+    }
 }
 
-footer nav a { 
-  border: solid 1px #fefbd8; 
-  padding: 5px;
-  margin-left: 5px;
-  margin-right: 5px;
-  border-radius: 5px;
-  text-decoration: none;
 }
 
-footer .footer-content { 
-  margin: 0 auto; 
-  width: 600px;
-}
 
-footer .footer-content h3 {
-padding: 0;
-margin: 20px 0;
-}
 
-footer nav {
-display: flex;
-}
 
 footer.a{
 margin: 10px;
 color: black;
 text-decoration: underline;
 }
-/*======= Create a selector for the anchor tag in the footer to have the following styles:
-margin: 10px;
-color: black;
-text-decoration: underline;
-*/
+
 
 
 footer nav a:first-child {
@@ -146,12 +137,10 @@ margin-left: 0;
 }
 
 footer a:hover {
-color: white;}
-/*======= Create a hover state for the anchor tag in the footer nav to have the following styles:
-color: white;
-*/
+  color: white;
+}
 
 footer .footer-content .copyright {
-padding: 20px 0;
-text-align: center;
+  padding: 20px 0;
+  text-align: center;
 }
