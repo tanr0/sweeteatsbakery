@@ -2,7 +2,9 @@
 * {
   color:#3C373B;
 }
-
+body{
+background-color: @main-background;
+}
 
 h1 {
 font-family: 'Gaegu', cursive;
@@ -39,58 +41,46 @@ img{
 border-radius: 10px;
 }
 
+header{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  .header{
+    margin: 2%;
+    max-width: 90vw;
+  }
+}
+
 
 .content-row {
-display: flex;
+  display: flex;
+  div {
+  margin: 20px;
+  }
 }
 
-.content-row div {
-  margin: 20px;
-}
+.content-row d
 
 .container {
   width: 600px;
   margin: 0 auto;
 }
 
-.container header nav a {
-margin: 0 10px;
-border: 2px  #fefbd8;
-padding: 20px;
-display: inline-block;
-border-radius: 20px;
-color: #36486b;
-text-decoration: none;
-margin-bottom: 20px;
-background-color: #F87B99;
-box-shadow: 4px 4px @border-color;
-}
 
-.container header nav a:hover {background-color:#36486b;
-color: pink;
-/*======= create a background property and set it to white.  Then create a color property and set it's value to pink. */
-}
 
-/*======= Create a selector for the about section to have the following styles:
-margin-top: 20px;
-*/
 
 .contact-section {
-border-top: 1px dashed black;
-padding: 20px 0;
-}
-
-.contact-section h2 {
-padding: 0;
-margin: 0 0 10px 0;
+  border-top: 1px dashed black;
+  padding: 20px 0;
+  h2 {
+    padding: 0;
+    margin: 0 0 10px 0;
+    }
 }
 
 address.contact-section{ 
 line-height:2;
 }
-/*======= Create a selector for the address tag in the contact-section class to have the following styles:
- line-height: 2;
-*/
 
 footer {
   display: flex;  
@@ -106,6 +96,10 @@ footer {
       margin: 20px 0;
       }    
   }
+  .footer-content .copyright {
+    padding: 20px 0;
+    text-align: center;
+  }
   nav{
     display:flex;
     justify-content: space-evenly;  
@@ -116,31 +110,16 @@ footer {
       margin-right: 5px;
       border-radius: 5px;
       text-decoration: none;
+      margin: 10px;
+      color: black;
+      text-decoration: underline;
     }
+    a:hover {
+      color: white;
+    }
+    a:first-child {
+      margin-left: 0;
+      }
 }
 
-}
-
-
-
-
-footer.a{
-margin: 10px;
-color: black;
-text-decoration: underline;
-}
-
-
-
-footer nav a:first-child {
-margin-left: 0;
-}
-
-footer a:hover {
-  color: white;
-}
-
-footer .footer-content .copyright {
-  padding: 20px 0;
-  text-align: center;
 }
