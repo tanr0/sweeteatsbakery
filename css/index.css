@@ -165,6 +165,14 @@ header {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  max-width: 90vw;
+}
+header div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 80vw;
+  padding: 2%;
 }
 header .header {
   margin: 2%;
@@ -172,17 +180,21 @@ header .header {
 }
 .content-row {
   display: flex;
+  justify-content: center;
 }
 .content-row div {
   margin: 20px;
 }
-.content-row d .container {
+.container {
   width: 600px;
   margin: 0 auto;
 }
 .contact-section {
   border-top: 1px dashed black;
   padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 .contact-section h2 {
   padding: 0;
